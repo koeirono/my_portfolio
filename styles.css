@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccd5ae;
+  color: #D4A373;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #D4A373;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: aliceblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.headertext {
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.headertext h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.headertext h1 span {
+  color: #FEFAE0;
+}
+
+
+.subtitle {
+  font-size: 60px;
+  font-weight: 600;
+  color: #D4A373;
+  margin-left: 20px;
+}
+
+.simple-tabs {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.simple-tabs input[type="radio"] {
+  display: none;
+}
+
+.simple-tabs label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #D4A373;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.simple-tabs input#tab-a:checked ~ #content-a,
+.simple-tabs input#tab-b:checked ~ #content-b,
+.simple-tabs input#tab-c:checked ~ #content-c {
+  display: block;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background-color: #FEFAE0;
+  border: 1px solid #D4A373;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+
+/*..........education.........*/
+#education {
+  padding: 30px 0;
+}
+
+.educationlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.educationlist div {
+  background: #ccd5ae;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.educationlist div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.educationlist div a {
+  text-decoration: none;
+  color: #FAEDCD;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.educationlist div:hover {
+  background:#FEFAE0;
+  transform: translateY(-10px);
+}
+
+/*................... Projects..........*/
+
+#projects {
+  padding: 50px 0;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.projectslist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.project1{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project1 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0,0.6), #D4A373);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #D4A373;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    text-align: center;
+}
+
+.project1:hover img{
+    transform: scale(1.1);
+
+}
+
+.project1:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(133, 130, 130);
+    padding: 14px 50px ;
+    border-radius: none;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.btn:hover{
+    background:#D4A373;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Contact Left */
+.contactleft {
+  flex-basis: 40%;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.contactleft p {
+  margin-top: 20px;
+}
+
+.contactleft p i {
+  color: #CCD5AE;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.socialmediaicons {
+  margin-top: 40px;
+}
+
+.socialmediaicons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #D4A373;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.socialmediaicons a:hover {
+  color: #FEFAE0;
+  transform: translateY(-5px);
+}
+
+.contactright {
+  flex-basis: 55%;
+  padding-left: 20px;
+}
+
+.contactright form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: rgb(224, 224, 224);
+  padding: 15px;
+  margin: 15px 0;
+  color: black;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  background-color: #D4A373;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form .btn2:hover {
+  background-color: #9a9a9a;
+}
+
+#message {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  font-size: 14px;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactleft,
+  .contactright {
+    flex-basis: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .contactleft {
+    margin-bottom: 30px;
+  }
+}
