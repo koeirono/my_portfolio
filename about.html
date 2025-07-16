@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +20,7 @@
 <body>
     <div id="aboutpage">
         <div class="container">
-            <nav>
+            <nav class="text-lg">
                 <img src="logo.png" alt="logo" class="logo">
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -26,37 +28,44 @@
                     <li><a href="education.html">Education</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <i class="fa-solid fa-x"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
             </nav>
+            <h3 class="text-center text-xl mt-[-30px] pb-0 mb-2 text-[#87956F]" >About Me</h3>
+            <h3 class="text-center mt-[10px] text-lg text-[#87956F]"> A software engineer in training with a background in finance and a vision for impact.
 
-<div class="simple-tabs">
-  <input type="radio" name="info" id="tab-a" checked>
-  <label for="tab-a">About</label>
+</h3>
 
-  <input type="radio" name="info" id="tab-b">
-  <label for="tab-b">Skills</label>
-
-  <input type="radio" name="info" id="tab-c">
-  <label for="tab-c">Interests</label>
-
-  <div class="tab-content" id="content-a">
-    <p>I am a software engineering student with a strong interest in full-stack web development. I enjoy learning new technologies, building responsive web applications, and writing clean, efficient code. My focus is on developing practical skills through hands-on projects and staying up to date with current industry trends. I’m motivated by problem-solving and the opportunity to create solutions that are both functional and user-friendly.</p>
+<section class="text-gray-600 body-font overflow-hidden mt-[-10px]">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="w-full mx-auto flex flex-wrap">
+      <img alt="keyboard" class="lg:w-1/2 w-full h-[400px] object-cover object-center rounded" src="aboutme4.jpg">
+      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+        <p class="leading-relaxed text-sm text-[#3e3e2d]">
+          Hello, I’m Cindy Rono — a passionate and motivated aspiring software developer with a background in economics.
+          My journey into tech is driven by a deep interest in problem-solving and a desire to create solutions that make
+          life better and more efficient. I’m currently learning full-stack development, building projects that combine
+          clean design with practical functionality. With every line of code, I’m growing my skills, sharpening my
+          creativity, and working toward a career where I can make a lasting impact through technology.
+        </p><br><br>
+        <h3 class="text-lg text-[#87956F]">Technical Expertise</h3><br>
+      <div class="flex items-center space-x-4">
+  <div class="flex flex-col items-center">
+    <i class="fa-brands fa-css3-alt text-5xl text-[#D4A373]"></i>
+    <p class="text-lg text-gray-700 mt-1">CSS3</p>
   </div>
 
-  <div class="tab-content" id="content-b">
-    <p>As a software engineering student, I’m currently building a solid foundation in web development. I have hands-on experience with HTML and CSS for creating and styling websites, and I’m actively learning the basics of JavaScript to add interactivity to my projects. I'm also developing an understanding of responsive design principles to ensure that my work looks good on different screen sizes.
-
-In addition to technical skills, I’m becoming familiar with version control using Git and GitHub, and I value clear communication and collaboration when working on group assignments. I’m committed to continuous learning and growth as I work towards becoming a well-rounded full-stack developer.</p>
+  <div class="flex flex-col items-center">
+    <i class="fa-brands fa-html5 text-5xl text-[#D4A373]"></i>
+    <p class="text-lg text-gray-700 mt-1">HTML5</p>
   </div>
-
-  <div class="tab-content" id="content-c">
-    <p>I’m interested in the intersection of technology and everyday problem-solving. As I continue learning software development, I’m particularly drawn to how tech can be used to improve user experience, streamline processes, and make information more accessible. I enjoy exploring topics like user-centered design, clean UI, and simple tools that create real value. I'm also curious about how technology can be applied to education, mental wellness, and social impact projects. These interests motivate me to keep learning, experimenting, and building meaningful applications.
-
-</p>
+    <div class="flex flex-col items-center">
+    <i class="fa-brands fa-github text-5xl text-[#D4A373]"></i>
+    <p class="text-lg text-gray-700 mt-1">GitHub</p>
   </div>
-</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 

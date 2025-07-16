@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,40 +29,42 @@
             <li><a href="education.html">Education</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <i class="fa-solid fa-x"></i>
           </ul>
-          <i class="fa-solid fa-bars"></i>
         </nav>
       </div>
 
-      <div id="education">
-        <div class="educontainer">
-          <div class="educationlist">
-            <div>
-              <h2>Jomo Kenyatta University of Agriculture and Technology</h2>
-              <p>B. Sc in Economics</p>
-              <a href="https://www.jkuat.ac.ke/bachelor-of-science-in-economic/"
-                >Learn more</a
-              >
-            </div>
-            <div>
-              <h2>Strathmore University</h2>
-              <p>Diploma in Business Management</p>
-              <a href="https://strathmore.edu/diploma-in-business-management/"
-                >Learn more</a
-              >
-            </div>
-            <div>
-              <h2>Zindua School</h2>
-              <p>Software Engineering</p>
-              <a
-                href="https://zinduaschool.com/programs/software-engineering-program/"
-                >Learn more</a
-              >
-            </div>
-          </div>
+<section class="text-gray-600 body-font mt-[-100px]">
+  <div class="container px-5 py-24 mx-auto">
+ 
+    <div class="flex flex-wrap sm:-m-4 mt-[-100px]">
+       <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-[-20px] w-full" src="str.png">
         </div>
+        <h2 class="text-xl font-medium title-font text-[#87956F] mt-5">Diploma in Business Management</h2>
+        <p class="text-base leading-relaxed mt-2 text-[#3e3e2d]">Strathmore University</p>
       </div>
+
+
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full bg-[#CCD5AE]" src="jkuat (1).png">
+        </div>
+        <h2 class="text-xl font-medium title-font text-[#87956F] mt-5">B.Sc in Economics</h2>
+        <p class="text-base leading-relaxed mt-2 text-[#3e3e2d]">Jomo Kenyatta University of Agriculture and Technology</p>
+      </div>
+
+
+       <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+<img alt="content" class="object-cover object-center h-auto w-[300px] mt-10" src="zindua.png">
+        </div>
+        <h2 class="text-xl font-medium title-font text-[#87956F] mt-5">Zindua School</h2>
+        <p class="text-base leading-relaxed mt-2 text-[#3e3e2d]">Software Enginering Program</p>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   </body>
 </html>
