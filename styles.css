@@ -17,16 +17,16 @@ body {
 .container {
   padding: 10px 10%;
   margin: 0;
-  
 
 }
 
 
-nav {
+.text-lg {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -10px;
 }
 
 .logo {
