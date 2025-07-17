@@ -61,8 +61,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-
-
 .headertext {
   margin-top: 5%;
   font-size: 30px;
@@ -77,87 +75,6 @@ nav ul li a:hover::after {
   color: #FEFAE0;
 }
 
-
-
-/* Contact Left */
-.contactleft {
-  flex-basis: 40%;
-  padding-right: 20px;
-  border-right: 1px solid #ccc;
-}
-
-.contactleft p {
-  margin-top: 20px;
-}
-
-.contactleft p i {
-  color: #CCD5AE;
-  margin-right: 15px;
-  font-size: 25px;
-}
-
-.socialmediaicons {
-  margin-top: 40px;
-}
-
-.socialmediaicons a {
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #D4A373;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-
-.socialmediaicons a:hover {
-  color: #FEFAE0;
-  transform: translateY(-5px);
-}
-
-.contactright {
-  flex-basis: 55%;
-  padding-left: 20px;
-}
-
-.contactright form {
-  width: 100%;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: rgb(224, 224, 224);
-  padding: 15px;
-  margin: 15px 0;
-  color: black;
-  font-size: 18px;
-  border-radius: 6px;
-}
-
-form .btn2 {
-  background-color: #D4A373;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 14px;
-  font-size: 18px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-form .btn2:hover {
-  background-color: #9a9a9a;
-}
-
-#message {
-  color: rgb(0, 0, 0);
-  margin-top: 10px;
-  font-size: 14px;
-  display: block;
-}
 
 @media only screen and (max-width: 600px) {
   .contactleft,
